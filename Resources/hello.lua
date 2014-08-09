@@ -46,7 +46,7 @@ local function main()
         animFrames:addObject(frame0)
         animFrames:addObject(frame1)
 
-        local animation = CCAnimation:createWithSpriteFrames(animFrames, 0.5)
+        local animation = CCAnimation:createWithSpriteFrames(animFrames, 0.8)
         local animate = CCAnimate:create(animation);
         spriteDog:runAction(CCRepeatForever:create(animate))
 
