@@ -200,5 +200,5 @@ local function main()
     sceneGame:addChild(createLayerMenu())
     CCDirector:sharedDirector():runWithScene(sceneGame)
 end
-
+     --主分支测试
 xpcall(main, __G__TRACKBACK__)
