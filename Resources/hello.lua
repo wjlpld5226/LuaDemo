@@ -81,7 +81,7 @@ local function main()
         for i = 0, 3 do
             for j = 0, 1 do
                 local spriteLand = CCSprite:create("land.png")
-                spriteLand:setPosition(200 + j * 180 - i % 2 * 90, 10 + i * 95 / 2)
+                spriteLand:setPosition(200 + j * 200 - i % 2 * 90, 10 + i * 95 / 2)
                 layerFarm:addChild(spriteLand)
             end
         end
@@ -126,6 +126,9 @@ local function main()
             touchBeginPoint = nil
             spriteDog.isPaused = false
         end
+
+
+        
 
         local function onTouch(eventType, x, y)
             if eventType == "began" then   
